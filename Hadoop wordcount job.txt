@@ -1,0 +1,36 @@
+CLOUD COMPOSER - Run a Hadoop wordcount job on a Dataproc cluster
+--------------
+Cloud Composer to create an Apache Airflow DAG (Directed Acyclic Graph) that runs an Apache Hadoop wordcount job on a Dataproc cluster.
+
+Fully Managed workflow orchestration
+Integrates with other google cloud products
+Author,schedule and monitor pipelines
+Built on Apache Airflow open source project and operated using python 
+
+DEMO
+---
+Defing GAG - set of dependent tasks (Deploy Dataproc,runjob and terminate Dataproc cluster)
+Deploy cloud composer Environment
+create a storage Bucket
+add variables in airflow 
+upload DAG definition file
+Monitor the pipeline
+
+
+Create a Cloud Composer environment with default parameters. Wait until environment creation is completed. When done, the green check mark displays to the left of the environment name.
+
+Note the region where you created your environment, for example us-central. You'll define an Airflow variable for this region and use it in the example DAG to run a Dataproc cluster in the same region.
+
+Set the Airflow variables
+gcp_project	The project ID of the project you're using for this tutorial, such as example-project.
+gcs_bucket	The URI Cloud Storage bucket you created for this tutorial, such as gs://example-bucket.
+gce_region	The region where you created your environment, such as us-central1. This is the region where your Dataproc cluster will be created.
+
+Upload the DAG to the environment's bucket
+
+Explore DAG runs
+
+
+
+
+
